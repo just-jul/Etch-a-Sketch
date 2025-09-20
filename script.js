@@ -11,6 +11,11 @@ for(let i = 0; i < (16*16); i++){
 
 }
 
+function getRandomColor(){
+    const randomColor = Math.floor(Math.random()*16777215).toString(16);
+    return `#${randomColor}`;
+}
+
 const button = document.querySelector(".btn");
 
 button.addEventListener("click", ()=>{
@@ -30,13 +35,13 @@ button.addEventListener("click", ()=>{
             square.style.width = `${640 / size}px`;
 
             square.addEventListener("mouseover", ()=>{
-                square.style.backgroundColor = "lightblue";
+                square.style.backgroundColor = getRandomColor();
             });
 
             container.append(square);
         }
     }
-})
+});
 
 
 
