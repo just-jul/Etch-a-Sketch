@@ -14,12 +14,25 @@ body{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 0px;
-    
+    gap: 0px;  
 }
 
 .square{
-    background-color: lightpink;
+    background-color: #d9d9d9;
     height: 40px;
     width: 40px;
+}
+
+.btn{
+    position: absolute;
+    margin-bottom: 800px;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: #d9d9d9;
+    border: none;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: lightblue;
 }
